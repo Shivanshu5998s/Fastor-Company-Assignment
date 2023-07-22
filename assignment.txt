@@ -1,0 +1,69 @@
+// CHAT
+
+Greetings of the day!
+We are glad to inform you that you have been shortlisted for the second round for the position of React Js Developer with Fastor.
+We have attached a short assignment that you are required to code in a given time frame. The furtherance of your candidature will depend on the fruition and quality of the task.
+Round Details :
+This round will be a task-based round followed by a discussion of the task submitted by you. You are required to send the task back on the same email after which a discussion panel will be set up.
+Time & Day :21 July 2023, 7:00 PM onwards
+Deadline to send the task back: 22 July 2023, 7:00 PM
+You can access the API from this link: https://app.getpostman.com/run-collection/07b2a0d5654e6a42cc5f
+Design Link: https://www.figma.com/file/cTAq6FteBYR3MDbh4feptK/Mobile-App-Design-Task?node-id=0%3A1
+Note:  It's a mobile responsive layout. Please implement it as a web application only.
+The team will coordinate with you at the given time for a status update.
+You are requested to kindly drop a confirmation for Round 2 by replying to this email.
+Looking forward to seeing the coder in you!
+
+// MAIL
+
+Greetings of the day!
+
+We are glad to inform you that you have been shortlisted for the second round for the position of React Js Developer with Fastor.
+
+We have attached a short assignment that you are required to code in a given time frame. The furtherance of your candidature will depend on the fruition and quality of the task.
+
+Round Details :
+This round will be a task-based round followed by a discussion of the task submitted by you. You are required to send the task back on the same email after which a discussion panel will be set up.
+
+Time & Day :21 July 2023, 7:00 PM onwards
+Deadline to send the task back: 22 July 2023, 7:00 PM
+You can access the API from this link: https://app.getpostman.com/run-collection/07b2a0d5654e6a42cc5f
+Design Link: https://www.figma.com/file/cTAq6FteBYR3MDbh4feptK/Mobile-App-Design-Task?node-id=0%3A1
+
+Note:  It's a mobile responsive layout. Please implement it as a web application only.
+The team will coordinate with you at the given time for a status update.
+
+You are requested to kindly drop a confirmation for Round 2 by replying to this email.
+
+Looking forward to seeing the coder in you!
+
+// PDF
+
+Fastor Final Round
+React Js Developer
+
+Final Round
+Time allotted: 3-4 hrs
+Designing an application that includes the following
+1. A login system where a user can simply fill in the mobile number on the 1st screen & then
+enter an OTP (123456) on the second screen.
+2. Once the person has logged in, you have to complete 2 functionalities. List of restaurants
+used to discover places & image superimposing which are explained below.
+3. The List of restaurants will have an api to show nearby places. This will be a REST API. (PFA
+Dummy UI file for design)
+4. On clicking each restaurant, on the next screen you will have to show the image of that
+restaurant in the center & superimpose this image with the fastor logo(PFA) in the center.
+Once this is done, you will now allow the user to share this image from the browser to any
+application. This will allow your application to become a progresssive web application.
+5. Bonus: This point is optional & will have a competitive advantage over other applicants.
+a. In point 4, on superimposing you have to allow the users to reposition the fastor
+logo anywhere on the restaurant image.
+
+Key Notes:
+● Try and focus on a clean & modern design.
+● Feel free to take inspiration & references from the internet.
+● You are free to use any library to design the above system.
+
+Ready. Set. Code.
+
+DONE...
