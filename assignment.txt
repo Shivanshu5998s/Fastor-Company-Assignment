@@ -67,3 +67,8 @@ Key Notes:
 Ready. Set. Code.
 
 DONE...
+
+// API & Design references links
+
+You can access the API from this link: https://app.getpostman.com/run-collection/07b2a0d5654e6a42cc5f
+Design Link: https://www.figma.com/file/cTAq6FteBYR3MDbh4feptK/Mobile-App-Design-Task?node-id=0%3A1
