@@ -25,7 +25,11 @@ const Otp = () => {
 
 
   const [response, setResponse] = useState([])
+  const handleVerif = () => {
+    // localStorage.setItem("fastor-single", JSON.stringify(props))
+    nav('/dashboard')
 
+  }
   const handleVerify = async () => {
     if ((pin1 + pin2 + pin3 + pin4 + pin5 + pin6) != "123456") {
       toast({
@@ -48,11 +52,9 @@ const Otp = () => {
       dial_code: "+91"
     }
     await axios.post('https://staging.fastor.in/v1/pwa/user/login', payload)
-
-      .then((res) =>
-        setResponse(res.data))
-
-      .catch((err) => console.log(err));
+    
+    .then((res) => 
+    setResponse(res.data)).catch((err) => console.log(err));
     localStorage.setItem("FastorToken", response.data.token ? response.data.token : null);
   };
 
@@ -86,7 +88,7 @@ const Otp = () => {
           width={"50%"}
           background={"#ff7878"}
           color="white"
-          onClick={handleVerify}
+          onClick={handleVerif}
         >
           Verify
         </Button>
