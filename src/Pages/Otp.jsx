@@ -33,7 +33,7 @@ const Otp = () => {
         description: "Please Enter Correct OTP",
         status: 'error',
         duration: 4000,
-        isClosable: true,
+        // isClosable: true,
       })
     }
     else {
