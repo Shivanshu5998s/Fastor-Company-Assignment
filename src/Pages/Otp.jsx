@@ -6,7 +6,7 @@ import {
   PinInputField,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useToast } from "@chakra-ui/react";
@@ -24,12 +24,8 @@ const Otp = () => {
   const nav = useNavigate();
 
 
-  const [response, setResponse] = useState([])
-  const handleVerif = () => {
-    // localStorage.setItem("fastor-single", JSON.stringify(props))
-    nav('/dashboard')
+  const [response, setResponse] = useState({})
 
-  }
   const handleVerify = async () => {
     if ((pin1 + pin2 + pin3 + pin4 + pin5 + pin6) != "123456") {
       toast({
@@ -44,18 +40,26 @@ const Otp = () => {
       nav('/dashboard')
     }
 
-
-
     const payload = {
-      phone: "8120138215",
+      phone: "9818979450",
       otp: pin1 + pin2 + pin3 + pin4 + pin5 + pin6,
-      dial_code: "+91"
+      dial_code: "+91",
+
     }
-    await axios.post('https://staging.fastor.in/v1/pwa/user/login', payload)
-    
-    .then((res) => 
-    setResponse(res.data)).catch((err) => console.log(err));
-    localStorage.setItem("FastorToken", response.data.token ? response.data.token : null);
+
+    try {
+      const response = await axios.post('https://staging.fastor.in/v1/pwa/user/login', payload);
+      if (response && response.data) {
+        console.log("Success", response.data.data.token);
+        localStorage.setItem("FastorToken", response.data.data.token);
+      } else {
+        // Handle the case where token is missing in the response
+      }
+      // console.log("Token:", response.data.token);
+    } catch (err) {
+      console.log(err);
+      // Handle errors if necessary
+    }
   };
 
   return (
@@ -88,7 +92,7 @@ const Otp = () => {
           width={"50%"}
           background={"#ff7878"}
           color="white"
-          onClick={handleVerif}
+          onClick={handleVerify}
         >
           Verify
         </Button>
@@ -101,4 +105,12 @@ const Otp = () => {
   );
 };
 
-export default Otp;
+export default Otp
+
+// await axios.post('https://staging.fastor.in/v1/pwa/user/login',payload).then((res) => setResponse(res.data)).catch((err) => console.log(err));
+
+// // localStorage.setItem("FastorToken",JSON.stringify(response.data))
+
+// localStorage.setItem("FastorToken",response.data.token? response.data.token : null);3
+
+//   console.log(response.data.token)

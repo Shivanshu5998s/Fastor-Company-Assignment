@@ -14,7 +14,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         if (!token || token == null || token == undefined) {
-            nav('/')
+            // nav('/')
 
         }
         else {
